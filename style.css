@@ -1,0 +1,238 @@
+/* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* CSS RESET END */
+
+/* NAV BAR */
+
+nav {
+  background-color: green;
+}
+.nav-visible {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  /* grid-gap: 1em; */
+  margin: 0 auto;
+  padding: 25px;
+  background-color: lavender;
+}
+.nav-off-canvas {
+  position: fixed;
+  left: 0px;
+  top: 0;
+  height: 100vh;
+  background-color: rgb(31, 36, 33);
+  color: white;
+  width: 300px;
+  /* display: none; */
+  overflow-y: auto;
+  transition: left 0.3s ease;
+  z-index: 3;
+}
+.nav-close {
+  color: white;
+  background-color: rgb(31, 36, 33);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+  margin: 10px;
+}
+.nav-close:hover,
+.nav-close:focus {
+  color: rgb(31, 36, 33);
+  background: white;
+}
+.nav-bar {
+  display: grid;
+  grid-template-columns: 200px;
+  margin: 50px;
+}
+.nav-bar li {
+  display: block;
+  padding-bottom: 1em;
+  font-size: 2em;
+  transition: all 0.3s ease;
+}
+.nav-bar li:hover,
+.nav-bar li:focus {
+  color: rgb(122, 122, 143);
+  cursor: pointer;
+}
+
+.fa-bars {
+  grid-column: 1 / 2;
+}
+.website-logo {
+  grid-column: 2 / 3;
+}
+.fa-shopping-cart {
+  grid-column: 3 / 4;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.fa-shopping-cart:hover,
+.fa-shopping-cart:focus {
+  color: white;
+}
+
+/* NAV BAR END*/
+
+/* Shopping Cart */
+
+/* Shopping Cart End */
+
+/* Products */
+.products-container {
+  width: 75vw;
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  justify-content: center;
+  background-color: yellow;
+  margin: 0 auto;
+}
+
+.product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.product-image {
+  max-width: 375px;
+  max-height: 300px;
+  /* width: auto;
+  height: auto; */
+}
+
+/* Products End */
