@@ -15,58 +15,103 @@
   </head>
 
   <body>
-    <!-- Nav Bar -->
-    <nav>
-      <div class="nav-visible">
+    <div class="nav-visible">
+      <a href="#main-menu" id="main-menu-toggle" class="menu-toggle">
         <i class="fas fa-bars"></i>
-        <!-- Logo -->
-        <!-- <img
-          class="website-logo"
-          src="./images/mountains logo.png"
-          alt="website generic logo"
-        /> -->
-        <!-- Logo End -->
-        <div class="nav-off-canvas">
-          <button class="nav-close">
-            <i class="fas fa-window-close fa-2x"></i>
-          </button>
-          <ul class="nav-bar">
-            <li>
-              <span class="home"><p>Home</p></span>
-            </li>
-            <li>
-              <span class="products"><p>Gear</p></span>
-            </li>
-            <li>
-              <span class="fashion">Fashion</span>
-            </li>
-          </ul>
-        </div>
-        <i class="fas fa-shopping-cart"></i>
-      </div>
+      </a>
+      <!-- Logo -->
+      <!-- <img
+        class="website-logo"
+        src="./images/mountains logo.png"
+        alt="website generic logo"
+      /> -->
+      <!-- Logo End -->
+      <i class="fas fa-shopping-cart"></i>
+    </div>
+    <!-- Nav Bar -->
+    <nav id="mobile-nav-container" class="mobile-nav-container">
+      <button class="nav-close">
+        <i class="fas fa-window-close fa-2x"></i>
+      </button>
+      <ul class="mobile-nav-bar">
+        <li>
+          <a href="#" class="home">Home</a>
+        </li>
+        <li>
+          <a href="#" class="gear">Gear</a>
+        </li>
+        <li>
+          <a href="#" class="fashion">Fashion</a>
+        </li>
+      </ul>
     </nav>
+
+    <a href="#" id="backdrop" hidden tabindex="-1"></a>
     <!-- Nav Bar End -->
 
     <!-- Hero -->
-    <div>
-      <div class="hero-container"></div>
+
+    <div class="hero-container">
+      <div class="hero"></div>
     </div>
+
     <!-- Hero End -->
 
+    <!-- Shopping Cart -->
+    <div class="shopping-cart-container">
+      <button class="cart-close">
+        <i class="fas fa-window-close fa-2x"></i>
+      </button>
+      <div class="shopping-cart">
+        <p>Shopping Cart</p>
+        <div class="shopping-cart-items">
+          Your Cart is Empty
+          <!-- Empty to add products dynamically -->
+        </div>
+        <div class="cart-total">
+          <span>Total</span><span class="total-amount">$0.00</span>
+        </div>
+        <button class="purchase">Purchase</button>
+      </div>
+    </div>
+
+    <!-- Shopping Cart End -->
+
+    <!-- Products -->
     <div class="products-container">
       <!-- Single Product -->
-      <!-- <div class="product">
-        <img
-          class="product-image"
-          src="./images/Tom Ford FT5532-B.jpg"
-          alt="Tom Ford glasses with sun clip"
-        />
-        <p>Tom Ford FT5532-B</p>
-        <p>$615</p>
-      </div> -->
-
+      <div class="product">
+        <a href="#" class="product-link"
+          ><img
+            class="product-image"
+            src="./images/Tom Ford FT5532-B.jpg"
+            alt="Tom Ford glasses with sun clip"
+        /></a>
+        <div class="product-information">
+          <a class="product-name" href="#">Tom Ford FT5532-B</a>
+          <p>$<span class="price">615.00</span></p>
+          <button class="add-to-cart">ADD TO CART</button>
+        </div>
+      </div>
+      <!-- Single Product End -->
+      <!-- Single Product -->
+      <div class="product">
+        <a href="#" class="product-link"
+          ><img
+            class="product-image"
+            src="./images/9Five 50-50 Flip-Up.jpg"
+            alt="9 Five flip up glasses"
+        /></a>
+        <div class="product-information">
+          <a class="product-name" href="#">9Five 50-50 Flip-Up</a>
+          <p>$<span class="price">140.00</span></p>
+          <button class="add-to-cart">ADD TO CART</button>
+        </div>
+      </div>
       <!-- Single Product End -->
     </div>
     <!-- Products End -->
+
+    <script src="app.js"></script>
   </body>
 </html>
