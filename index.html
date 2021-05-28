@@ -11,6 +11,13 @@
       crossorigin="anonymous"
     />
     <!-- Font Awesome End -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts End-->
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -60,18 +67,42 @@
     <!-- Shopping Cart -->
     <div class="shopping-cart-container">
       <button class="cart-close">
-        <i class="fas fa-window-close fa-2x"></i>
+        <i class="fas fa-times fa-2x"></i>
       </button>
       <div class="shopping-cart">
         <p>Shopping Cart</p>
         <div class="shopping-cart-items">
           Your Cart is Empty
           <!-- Empty to add products dynamically -->
+
+          <!-- Temporary products in shopping cart -->
+          <div class="shopping-cart-item">
+            <img src="./images/Tom Ford FT5532-B.jpg" alt="tom fords in cart" />
+            <div class="product-info">
+              <p class="product-name-cart">Tom Ford FT5532-B</p>
+              <p class="product-price">$615.00</p>
+            </div>
+
+            <div class="quantity">
+              <button class="subtract-btn">
+                <i class="fas fa-minus"></i>
+              </button>
+              <input type="text" class="product-quantity" value="1" />
+              <button class="add-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+            <button class="remove-product">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+
+          <!-- Temporary products in shopping cart end-->
         </div>
         <div class="cart-total">
           <span>Total</span><span class="total-amount">$0.00</span>
         </div>
-        <button class="purchase">Purchase</button>
+        <button class="purchase">Checkout</button>
       </div>
     </div>
 
